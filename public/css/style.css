@@ -1,0 +1,221 @@
+body {
+  background: #3f51b5;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contenedor {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: slateblue;
+  align-items: center;
+  width: 100%;
+}
+
+header img {
+  max-width: 70px;
+  padding: 10px;
+  border-radius: 50px;
+  display: block;
+}
+
+nav {
+  flex-basis: 250px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash {
+  width: 100%;
+}
+
+.splash img {
+  width: 30vw;
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.splash h1 {
+  font-family: "championhtf-heavyweight", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  background: #212121;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.splash iframe {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.intro {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro div h1 {
+  color: #ffffff;
+  background: #212121;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.intro div:nth-child(2) {
+  background: #c5cae9;
+}
+
+section .list-episodes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.list-episodes div {
+  flex-basis: 250px;
+  flex-grow: 1;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.list-episodes p {
+  background: #c5cae9;
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+  min-height: 280px;
+}
+
+.list-episodes div b {
+  color: #ffffff;
+}
+
+section .boletin {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.boletin {
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.boletin div h3 {
+  color: #ffffff;
+  background: #212121;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.boletin div p {
+  background: #c5cae9;
+  padding: 5px 10px;
+}
+
+footer {
+  min-height: 130px;
+  background: #212121;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li a {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "championhtf-heavyweight";
+  src: url("//fonts/champion-htf-heavyweight-webfont.woff2") format("woff2"),
+    url("../fonts/champion-htf-heavyweight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    width: 100% !important;
+  }
+
+  footer .ul-list {
+  }
+
+  footer ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  footer div:first-child {
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .splash iframe {
+    width: 100%;
+  }
+
+  .splash h1 {
+    font-size: 20px;
+  }
+}
